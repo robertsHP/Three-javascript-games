@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Pong</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <a href="snake.html">Snake</a>
+            <a href="pong.html">Pong</a>
+            <a href="tetris.html">Tetris</a>
+        </header>
+        <h1 id="game-title">Pong</h1>
+        <div id="body-container">
+            <div id="instr-container">
+                <h4>Controls :</h4>
+                <p>P - pause <br>Enter - start game</p>
+                <p>Player 1<br>W - go up<br>S - go down</p>
+                <p>Player 2<br>O - go up<br>L - go down</p>
+            </div>
+            <div id="game-container">
+                <canvas id="screen" width="650" height="450"></canvas>
+                <script>
+                    let canv = document.getElementById("screen");
+                    let cntx = canv.getContext('2d');
+                </script>
+                <script src="pong/obj.js"></script>
+                <script src="pong/background.js"></script>
+                <script src="pong/game.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

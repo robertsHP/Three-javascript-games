@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Tetris</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Home</a>
+            <a href="snake.html">Snake</a>
+            <a href="pong.html">Pong</a>
+            <a href="tetris.html">Tetris</a>
+        </header>
+        <h1 id="game-title">Tetris</h1>
+        <div id="body-container">
+            <div id="instr-container">
+                <h4 class="heading">Controls :</h4>
+                <p class="article">A - left<br>S - down<br>D - right<br> L - rotate<br>P - pause</p>
+            </div>
+            <div id="game-container">
+                <canvas id="screen" width="400" height="510"></canvas>
+                <script>
+                    let canv = document.getElementById("screen");
+                    let cntx = canv.getContext('2d');
+                    let tileSize = 20;
+                </script>
+                <script src="tetris/shapes.js"></script>
+                <script src="tetris/background.js"></script>
+                <script src="tetris/obj.js"></script>
+                <script src="tetris/controls.js"></script>
+                <script src="tetris/game.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
